@@ -1,6 +1,7 @@
 #!/bin/bash
 
 kathara lstart
+sleep 5
 
 xdotool search --name "root@pc1_subnet1: /" windowmove 0    0
 xdotool search --name "root@pc2_subnet1: /" windowmove 500  0
