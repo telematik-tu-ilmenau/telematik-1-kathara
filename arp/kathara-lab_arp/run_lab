@@ -7,13 +7,13 @@ xdotool search --name "root@pc2_subnet1: /" windowmove 500  0
 xdotool search --name "root@pc3_subnet1: /" windowmove 1000 0
 xdotool search --name "root@router1: /"     windowmove 1500 0
 
-xdotool search --name "root@pc1_subnet2: /" windowmove 0    0
-xdotool search --name "root@pc2_subnet2: /" windowmove 500  0
-xdotool search --name "root@pc3_subnet2: /" windowmove 1000 0
-xdotool search --name "root@router2: /"     windowmove 1500 0
+xdotool search --name "root@pc1_subnet2: /" windowmove 0    350
+xdotool search --name "root@pc2_subnet2: /" windowmove 500  350
+xdotool search --name "root@pc3_subnet2: /" windowmove 1000 350
+xdotool search --name "root@router2: /"     windowmove 1500 350
 
-xdotool search --name "root@pc1_subnet3: /" windowmove 0    0
-xdotool search --name "root@pc2_subnet3: /" windowmove 500  0
-xdotool search --name "root@pc3_subnet3: /" windowmove 1000 0
-xdotool search --name "root@router3: /"     windowmove 1500 0
+xdotool search --name "root@pc1_subnet3: /" windowmove 0    700
+xdotool search --name "root@pc2_subnet3: /" windowmove 500  700
+xdotool search --name "root@pc3_subnet3: /" windowmove 1000 700
+xdotool search --name "root@router3: /"     windowmove 1500 700
 
