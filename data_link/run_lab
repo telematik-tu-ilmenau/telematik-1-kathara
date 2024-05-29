@@ -1,0 +1,15 @@
+#!/bin/bash
+
+kathara lstart
+sleep 5
+
+xdotool search --name "root@pc1: /" windowmove 0    0
+xdotool search --name "root@pc2: /" windowmove 500  0
+xdotool search --name "root@pc3: /" windowmove 1000 0
+
+xdotool search --name "root@pc3: /" windowmove 0    350
+
+xdotool search --name "root@switch1: /" windowmove 0    700
+xdotool search --name "root@switch2: /" windowmove 500  700
+xdotool search --name "root@switch3: /" windowmove 1000 700
+

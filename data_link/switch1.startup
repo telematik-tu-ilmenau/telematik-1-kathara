@@ -1,0 +1,10 @@
+ip link set dev eth0 address F0:07:3F:01:00:01
+ip link set dev eth1 address F0:07:3F:01:00:02
+ip link set dev eth2 address F0:07:3F:01:00:03
+
+brctl addbr br0
+brctl addif br0 eth0
+brctl addif br0 eth1
+brctl addif br0 eth2
+
+ip l s dev br0 up
