@@ -13,3 +13,4 @@ xdotool search --name "root@switch1: /" windowmove 0    700
 xdotool search --name "root@switch2: /" windowmove 500  700
 xdotool search --name "root@switch3: /" windowmove 1000 700
 
+chromium --app=http://localhost:3000 --new-window
