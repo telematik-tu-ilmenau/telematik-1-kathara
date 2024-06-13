@@ -6,3 +6,5 @@ ip link set dev eth1 address F0:07:3F:02:00:02
 ip link set dev eth2 address F0:07:3F:02:00:03
 
 ip address add 222.1.1.1/24 dev eth0
+ip address add 10.1.1.21/24 dev eth1
+ip address add 10.1.1.22/24 dev eth2
