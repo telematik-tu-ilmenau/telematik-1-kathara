@@ -1,0 +1,2 @@
+ip address add 221.1.1.11/24 dev eth0
+
