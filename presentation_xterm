@@ -1,0 +1,3 @@
+#!/bin/bash
+
+uxterm -rv -geometry 48x15 -fs 11 -fa Monospace -e /bin/bash -l -c "$@"
