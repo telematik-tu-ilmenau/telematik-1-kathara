@@ -1,0 +1,49 @@
+#!/bin/bash
+
+MODIFIED_XTERM=""
+
+print_help() {
+    echo "Run kathara lab & automatically align terminals."
+    echo "Usage: ./run_lab [OPTIONS]"
+    echo "Options: "
+    echo "    -p|--presentation  Larger font, white background, black font"
+    echo "    -h|--help          Print this help"
+}
+
+POSITIONAL=()
+while [[ $# -gt 0 ]]
+do
+    key="$1"
+
+    case $key in
+        -p|--presentation)
+            MODIFIED_XTERM="--xterm $(pwd)/../presentation_xterm"
+            shift # past argument
+            ;;
+        -h|--help)
+            print_help
+            exit 0
+            ;;
+        *)
+            print_help
+            exit 1
+            ;;
+    esac
+done
+set -- "${POSITIONAL[@]}"
+
+
+
+kathara lstart $MODIFIED_XTERM
+sleep 5
+
+xdotool search --name "root@pc1: /" windowmove 0    0
+xdotool search --name "root@pc2: /" windowmove 500  0
+xdotool search --name "root@pc3: /" windowmove 0    350
+xdotool search --name "root@pc4: /" windowmove 500    350
+
+xdotool search --name "root@router1: /" windowmove 0    700
+xdotool search --name "root@router2: /" windowmove 500  700
+xdotool search --name "root@router3: /" windowmove 1000 700
+
+chromium --app=http://localhost:3000 --new-window &
