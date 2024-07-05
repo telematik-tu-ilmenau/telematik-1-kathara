@@ -6,6 +6,7 @@ RUN apt install -y \
 RUN apt clean
 
 COPY dnsmasq.conf /etc/dnsmasq.conf
+COPY resolv.conf /etc/resolv.conf
 
 
 RUN systemctl enable dnsmasq
