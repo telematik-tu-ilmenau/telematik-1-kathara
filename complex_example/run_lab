@@ -40,8 +40,8 @@ sleep 5
 xdotool search --name "root@laptop: /" windowmove 0    0
 xdotool search --name "root@dhcp: /" windowmove 0    350
 xdotool search --name "root@dns: /" windowmove 500    350
-xdotool search --name "root@http: /" windowmove 1000    350
 
 xdotool search --name "root@router: /" windowmove 0    700
+xdotool search --name "root@http: /" windowmove 350    700
 
 chromium --app=http://localhost:3000 --new-window &
