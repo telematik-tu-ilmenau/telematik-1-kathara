@@ -1,4 +1,4 @@
 ip link set dev eth0 address  b9:c0:67:d7:97:8c
 systemctl stop networking
-printf "\nauto eth0\nallow-hotplug eth0\n iface eth0 inet dhcp\n" >> /etc/network/interfaces
+printf "\nauto eth0\nallow-hotplug eth0\niface eth0 inet dhcp\n" >> /etc/network/interfaces
 
