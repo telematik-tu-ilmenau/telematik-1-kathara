@@ -1,0 +1,5 @@
+ip link set dev eth0 address 70:98:89:24:fb:63
+ip address add 141.24.12.2/24 dev eth0
+
+ip route add default via 141.24.12.1
+clear

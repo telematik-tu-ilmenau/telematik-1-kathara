@@ -1,0 +1,5 @@
+ip link set dev eth0 address 1f:98:16:08:8f:01
+ip address add 166.78.45.122/24 dev eth0
+
+ip route add default via 166.78.45.1
+clear

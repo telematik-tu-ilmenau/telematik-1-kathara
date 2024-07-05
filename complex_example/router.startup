@@ -1,0 +1,11 @@
+sysctl -w net.ipv6.conf.all.disable_ipv6=1
+sysctl -w net.ipv6.conf.default.disable_ipv6=1
+
+ip link set dev eth0 address 38:c4:e0:71:dd:a6
+ip link set dev eth1 address 38:c4:e0:71:dd:a7
+
+ip address add 141.24.56.254/24 dev eth0
+ip address add 141.24.12.1/24 dev eth1
+ip address add 166.78.45.1/24 dev eth1
+
+clear

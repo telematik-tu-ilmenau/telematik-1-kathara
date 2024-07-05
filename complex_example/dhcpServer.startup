@@ -1,0 +1,5 @@
+ip link set dev eth0 address 68:2e:97:df:50:e4
+ip address add 141.24.56.8/24 dev eth0
+
+
+clear
